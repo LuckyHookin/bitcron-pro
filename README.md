@@ -1,6 +1,6 @@
 # bitcron-pro
 
-> 原项目: [Gridea-theme bitcron-pro](https://github.com/qyxtim/bitcron-pro)
+> 原项目: [Gridea-theme bitcron-pro](https://github.com/qyxtim/bitcron-pro) （感谢！）
 
 对原项目功能进行了删减，并修复了一些 bug.
 
