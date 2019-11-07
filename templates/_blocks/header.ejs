@@ -1,17 +1,9 @@
-    <div class="header">
+    <div class="header animated fadeInDown">
       <div class="logo_title">
 		  
-        <div class="title animated fadeInDown"><img id="img1" style="display:inline-block;" src="<%= themeConfig.domain %>/images/avatar.png"/>
-<script>
-var r = 0;
-    window.onload = function(){
-        var current = 0;
-        document.getElementById('img1').onclick = function(){
-            current = (current+90)%360;
-            this.style.transform = 'rotate('+current+'deg)';
-        }
-    };
-</script>
+        <div class="title">
+          <img class="limg" src="<%= themeConfig.domain %>/images/avatar.png"/>
+          
           <h1 title="<%= themeConfig.siteName %>" class="weaklink"><a  href="/"><%= themeConfig.siteName %></a>
 
           </h1>
@@ -67,7 +59,7 @@ var r = 0;
 
       </div>
 
-      <div class="hidden_nav animated fadeInDown">
+      <div class="hidden_nav">
 
 <div class="bitcron_nav_container">
 

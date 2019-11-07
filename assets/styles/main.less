@@ -201,10 +201,9 @@ a:active {
 
 .reward .reward-code img {
     display: inline-block;
-    float  : left;
     width  : 150px;
     height : 150px;
-    margin : 0 auto;
+    
     border : 0
 }
 
@@ -232,13 +231,14 @@ a:active {
 }
 
 .header .logo_title {
-    text-align: left
+    text-align: left;
 }
 
-.header .logo_title .title img {
+.header .logo_title .title .limg {
     width : 30px;
+    height: 30px;
     margin: .7em .5em 0 0;
-    float : left
+    float: left;
 }
 
 .header .logo_title .title h1 {
@@ -768,19 +768,11 @@ a:active {
     -ms-animation-fill-mode    : both;
     -o-animation-fill-mode     : both;
     animation-fill-mode        : both;
-    -webkit-animation-duration : 1s;
-    -moz-animation-duration    : 1s;
-    -ms-animation-duration     : 1s;
-    -o-animation-duration      : 1s;
-    animation-duration         : 1s
-}
-
-.animated.hinge {
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration   : 1s;
-    -ms-animation-duration    : 1s;
-    -o-animation-duration     : 1s;
-    animation-duration        : 1s
+    -webkit-animation-duration : 0.5s;
+    -moz-animation-duration    : 0.5s;
+    -ms-animation-duration     : 0.5s;
+    -o-animation-duration      : 0.5s;
+    animation-duration         : 0.5s
 }
 
 @-webkit-keyframes fadeInDown {
@@ -937,6 +929,11 @@ a:active {
 .markdown h5,
 .markdown h6 {
     margin: .8em 0 .5em 0
+}
+
+.markdown figure {
+    display:inline-block;
+    line-height: 0;
 }
 
 .markdown img {
@@ -4477,4 +4474,22 @@ a:active {
     margin  : 0;
     overflow: visible;
     clip    : auto
+}
+
+
+
+.darkmode-layer, .darkmode-toggle {
+    z-index: 500;
+  }
+
+.darkmode--activated img {
+    mix-blend-mode: difference;
+}
+
+.darkmode--activated figure {
+    mix-blend-mode: difference;
+}
+
+.darkmode--activated .logo_title .title .limg {
+    visibility:hidden
 }
